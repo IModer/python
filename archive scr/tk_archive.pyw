@@ -35,7 +35,7 @@ def run_my_video():
 				v2.set("Unexpected error, this episode doesn't exists")
 			os.startfile(str(mypath.format(show, currentep)))
 			master.destroy()
-path = "C:\\Users\\theco\\Desktop\\archive.txt"
+path = ""
 data = ""
 while kb.is_pressed('alt+c') == False:
 	if kb.is_pressed('alt+a'):
@@ -61,7 +61,7 @@ while kb.is_pressed('alt+c') == False:
 		
 	if kb.is_pressed('alt+q'):
 		#subprocess.Popen(r'explorer /select,"G:\\Anime"')
-		os.startfile('C:\\Users\\theco\\Desktop\\anime.txt')
+		os.startfile('')
 		time.sleep(0.5)
 
 	if kb.is_pressed('alt+u'):

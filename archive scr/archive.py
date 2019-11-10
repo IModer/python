@@ -9,7 +9,7 @@ import subprocess
 today = dt.datetime.now()
 r = Tk()
 r.withdraw()
-path = "C:\\Users\\theco\\Desktop\\archive.txt"
+path = ""
 data = ""
 while kb.is_pressed('alt+c') == False:
 	if kb.is_pressed('alt+a'):
@@ -34,14 +34,14 @@ while kb.is_pressed('alt+c') == False:
 		#r.clipboard_clear()
 		
 	if kb.is_pressed('alt+q'):
-		subprocess.Popen(r'explorer /select,"G:\\Anime"')
-		os.startfile('C:\\Users\\theco\\Desktop\\anime.txt')
+		subprocess.Popen(r'explorer /select,""')
+		os.startfile('')
 		time.sleep(0.5)
 
 	if kb.is_pressed('alt+u'):
 		show = input('') 
 		ep = input('')
-		mypath_half = '"G:\\Anime\\' + show + '"'
+		mypath_half = '"' + show + '"'
 		mypath = 'explorer /select,' + mypath_half
 		subprocess.Popen(r + mypath)
 exit()
